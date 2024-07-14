@@ -101,7 +101,7 @@ function OverviewComponent(props) {
   return (
     <Container>
         <BalanceBox>
-            Balance: ${props.income-props.expense}
+            Balance: ₹{props.income-props.expense}
             <AddTrasaction onClick={()=>toggleAddTxn(!isAddTxnVisible)}>{isAddTxnVisible?"cancel":"ADD"}</AddTrasaction>
         </BalanceBox>
         {isAddTxnVisible && <AddTransactionView toggleAddTxn={toggleAddTxn} addTransaction={props.addTransaction}/>}
