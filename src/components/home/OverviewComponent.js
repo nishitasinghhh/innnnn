@@ -107,10 +107,10 @@ function OverviewComponent(props) {
         {isAddTxnVisible && <AddTransactionView toggleAddTxn={toggleAddTxn} addTransaction={props.addTransaction}/>}
         <EpenseContainer>
 <ExpenseBox isIncome={false}>
-    Expense <span>${props.expense}</span>
+    Expense <span>₹{props.expense}</span>
 </ExpenseBox>
 <ExpenseBox isIncome={true}>
-    Income <span>${props.income}</span>
+    Income <span>₹{props.income}</span>
 </ExpenseBox>
         </EpenseContainer>
     </Container>
